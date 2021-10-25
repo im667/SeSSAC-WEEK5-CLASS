@@ -4,7 +4,7 @@
 //
 //  Created by mac on 2021/10/25.
 //
-
+//commit
 import UIKit
 import Alamofire
 import SwiftyJSON
@@ -20,7 +20,7 @@ class OpenWeatherMapViewController: UIViewController {
     var longitude:Double?
     
     
-    @IBOutlet weak var dateLabel: UILabel!//현재날짜
+    @IBOutlet weak var dateLabel: UILabel!//현재날짜 
     @IBOutlet weak var locationLabel: UILabel!//현재위치
     @IBOutlet weak var tempLabel: UILabel!//온도
     @IBOutlet weak var huminLabel: UILabel!//습도

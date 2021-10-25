@@ -13,6 +13,10 @@
 		0443DC2E27264457007397D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0443DC2C27264457007397D6 /* Main.storyboard */; };
 		0443DC302726445A007397D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0443DC2F2726445A007397D6 /* Assets.xcassets */; };
 		0443DC332726445A007397D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0443DC312726445A007397D6 /* LaunchScreen.storyboard */; };
+		0443DC3C272644A8007397D6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0443DC3B272644A8007397D6 /* Alamofire */; };
+		0443DC3F272644F7007397D6 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 0443DC3E272644F7007397D6 /* SwiftyJSON */; };
+		0443DC41272687BE007397D6 /* OpenWeatherMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443DC40272687BE007397D6 /* OpenWeatherMapViewController.swift */; };
+		0443DC432726C629007397D6 /* AlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443DC422726C629007397D6 /* AlertExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,8 @@
 		0443DC2F2726445A007397D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0443DC322726445A007397D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0443DC342726445A007397D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0443DC40272687BE007397D6 /* OpenWeatherMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherMapViewController.swift; sourceTree = "<group>"; };
+		0443DC422726C629007397D6 /* AlertExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0443DC3F272644F7007397D6 /* SwiftyJSON in Frameworks */,
+				0443DC3C272644A8007397D6 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +68,8 @@
 				0443DC2827264457007397D6 /* SceneDelegate.swift */,
 				0443DC2A27264457007397D6 /* ViewController.swift */,
 				0443DC2C27264457007397D6 /* Main.storyboard */,
+				0443DC40272687BE007397D6 /* OpenWeatherMapViewController.swift */,
+				0443DC422726C629007397D6 /* AlertExtension.swift */,
 				0443DC2F2726445A007397D6 /* Assets.xcassets */,
 				0443DC312726445A007397D6 /* LaunchScreen.storyboard */,
 				0443DC342726445A007397D6 /* Info.plist */,
@@ -83,6 +93,10 @@
 			dependencies = (
 			);
 			name = "SeSSAC-WEEK5-CLASS";
+			packageProductDependencies = (
+				0443DC3B272644A8007397D6 /* Alamofire */,
+				0443DC3E272644F7007397D6 /* SwiftyJSON */,
+			);
 			productName = "SeSSAC-WEEK5-CLASS";
 			productReference = 0443DC2327264457007397D6 /* SeSSAC-WEEK5-CLASS.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,10 @@
 				Base,
 			);
 			mainGroup = 0443DC1A27264457007397D6;
+			packageReferences = (
+				0443DC3A272644A8007397D6 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				0443DC3D272644F7007397D6 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 0443DC2427264457007397D6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +156,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0443DC432726C629007397D6 /* AlertExtension.swift in Sources */,
+				0443DC41272687BE007397D6 /* OpenWeatherMapViewController.swift in Sources */,
 				0443DC2B27264457007397D6 /* ViewController.swift in Sources */,
 				0443DC2727264457007397D6 /* AppDelegate.swift in Sources */,
 				0443DC2927264457007397D6 /* SceneDelegate.swift in Sources */,
@@ -360,6 +380,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0443DC3A272644A8007397D6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		0443DC3D272644F7007397D6 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = exactVersion;
+				version = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0443DC3B272644A8007397D6 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0443DC3A272644A8007397D6 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		0443DC3E272644F7007397D6 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0443DC3D272644F7007397D6 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0443DC1B27264457007397D6 /* Project object */;
 }

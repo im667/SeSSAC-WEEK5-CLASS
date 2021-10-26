@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -102,6 +103,112 @@
             </objects>
             <point key="canvasLocation" x="955.07246376811599" y="65.625"/>
         </scene>
+        <!--New View Controller-->
+        <scene sceneID="F8T-hP-E2g">
+            <objects>
+                <viewController storyboardIdentifier="NewViewController" id="3Lz-j1-WFQ" customClass="NewViewController" customModule="SeSSAC_WEEK5_CLASS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qeh-vq-ez0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4aA-ce-zuf">
+                                <rect key="frame" x="186" y="80" width="42" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="lyF-4x-X7y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJp-X0-rDz">
+                                <rect key="frame" x="186" y="156" width="42" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="8vP-rr-tkM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFM-dQ-DSM">
+                                <rect key="frame" x="186" y="232" width="42" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="aoe-rK-fcA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2Ko-T7-5fA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WJp-X0-rDz" firstAttribute="top" secondItem="4aA-ce-zuf" secondAttribute="bottom" constant="36" id="IPM-jd-rcI"/>
+                            <constraint firstItem="4aA-ce-zuf" firstAttribute="top" secondItem="2Ko-T7-5fA" secondAttribute="top" constant="36" id="Pgl-He-6nX"/>
+                            <constraint firstItem="sFM-dQ-DSM" firstAttribute="leading" secondItem="2Ko-T7-5fA" secondAttribute="leading" constant="186" id="Teb-JU-h3Q"/>
+                            <constraint firstItem="2Ko-T7-5fA" firstAttribute="trailing" secondItem="WJp-X0-rDz" secondAttribute="trailing" constant="186" id="UsY-DO-EIj"/>
+                            <constraint firstItem="sFM-dQ-DSM" firstAttribute="top" secondItem="WJp-X0-rDz" secondAttribute="bottom" constant="36" id="dAs-q1-TS0"/>
+                            <constraint firstItem="2Ko-T7-5fA" firstAttribute="trailing" secondItem="4aA-ce-zuf" secondAttribute="trailing" constant="186" id="m3a-6e-Rso"/>
+                            <constraint firstItem="4aA-ce-zuf" firstAttribute="leading" secondItem="2Ko-T7-5fA" secondAttribute="leading" constant="186" id="qPs-C3-7Cp"/>
+                            <constraint firstItem="2Ko-T7-5fA" firstAttribute="trailing" secondItem="sFM-dQ-DSM" secondAttribute="trailing" constant="186" id="xkB-uQ-HWy"/>
+                            <constraint firstItem="WJp-X0-rDz" firstAttribute="leading" secondItem="2Ko-T7-5fA" secondAttribute="leading" constant="186" id="ye5-fN-9LA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tempLabel" destination="4aA-ce-zuf" id="GfS-Pl-Xzr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9my-o1-lfK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1909" y="66"/>
+        </scene>
+        <!--Papago View Controller-->
+        <scene sceneID="c3V-Ze-6nj">
+            <objects>
+                <viewController id="RaH-Kb-k9l" customClass="PapagoViewController" customModule="SeSSAC_WEEK5_CLASS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qxg-ap-ZTa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bA8-0O-wuZ">
+                                <rect key="frame" x="87" y="176" width="256" height="172"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hud-DZ-hcG">
+                                <rect key="frame" x="174" y="407" width="67" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="translateButtonClicked:" destination="RaH-Kb-k9l" eventType="touchUpInside" id="dLo-4j-GFI"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="L2R-0n-rZm">
+                                <rect key="frame" x="95" y="515" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xyX-M1-eae"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="sourceTextView" destination="bA8-0O-wuZ" id="ObP-ca-Swl"/>
+                        <outlet property="targetTextView" destination="L2R-0n-rZm" id="PUi-Vg-331"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yn8-51-Jft" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2749.275362318841" y="58.928571428571423"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="4W3-WQ-sXd">
             <objects>
@@ -124,5 +231,11 @@
     <resources>
         <image name="background" width="414" height="818.5"/>
         <image name="paperplane" catalog="system" width="128" height="118"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

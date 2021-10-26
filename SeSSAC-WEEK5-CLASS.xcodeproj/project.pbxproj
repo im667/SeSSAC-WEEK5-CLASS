@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0443DC2727264457007397D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443DC2627264457007397D6 /* AppDelegate.swift */; };
 		0443DC2927264457007397D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443DC2827264457007397D6 /* SceneDelegate.swift */; };
-		0443DC2B27264457007397D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443DC2A27264457007397D6 /* ViewController.swift */; };
 		0443DC2E27264457007397D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0443DC2C27264457007397D6 /* Main.storyboard */; };
 		0443DC302726445A007397D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0443DC2F2726445A007397D6 /* Assets.xcassets */; };
 		0443DC332726445A007397D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0443DC312726445A007397D6 /* LaunchScreen.storyboard */; };
@@ -17,19 +16,25 @@
 		0443DC3F272644F7007397D6 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 0443DC3E272644F7007397D6 /* SwiftyJSON */; };
 		0443DC41272687BE007397D6 /* OpenWeatherMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443DC40272687BE007397D6 /* OpenWeatherMapViewController.swift */; };
 		0443DC432726C629007397D6 /* AlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443DC422726C629007397D6 /* AlertExtension.swift */; };
+		0443DC6F27278525007397D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443DC6E27278525007397D6 /* ViewController.swift */; };
+		0443DC73272786D1007397D6 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443DC72272786D1007397D6 /* NewViewController.swift */; };
+		0443DC752727927A007397D6 /* PapagoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443DC742727927A007397D6 /* PapagoViewController.swift */; };
+		048E30E42727F10500F95A43 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 048E30E32727F10500F95A43 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0443DC2327264457007397D6 /* SeSSAC-WEEK5-CLASS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SeSSAC-WEEK5-CLASS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0443DC2627264457007397D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0443DC2827264457007397D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0443DC2A27264457007397D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0443DC2D27264457007397D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0443DC2F2726445A007397D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0443DC322726445A007397D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0443DC342726445A007397D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0443DC40272687BE007397D6 /* OpenWeatherMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherMapViewController.swift; sourceTree = "<group>"; };
 		0443DC422726C629007397D6 /* AlertExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertExtension.swift; sourceTree = "<group>"; };
+		0443DC6E27278525007397D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0443DC72272786D1007397D6 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		0443DC742727927A007397D6 /* PapagoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PapagoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				048E30E42727F10500F95A43 /* Kingfisher in Frameworks */,
 				0443DC3F272644F7007397D6 /* SwiftyJSON in Frameworks */,
 				0443DC3C272644A8007397D6 /* Alamofire in Frameworks */,
 			);
@@ -65,10 +71,12 @@
 			isa = PBXGroup;
 			children = (
 				0443DC2627264457007397D6 /* AppDelegate.swift */,
+				0443DC6E27278525007397D6 /* ViewController.swift */,
 				0443DC2827264457007397D6 /* SceneDelegate.swift */,
-				0443DC2A27264457007397D6 /* ViewController.swift */,
 				0443DC2C27264457007397D6 /* Main.storyboard */,
+				0443DC742727927A007397D6 /* PapagoViewController.swift */,
 				0443DC40272687BE007397D6 /* OpenWeatherMapViewController.swift */,
+				0443DC72272786D1007397D6 /* NewViewController.swift */,
 				0443DC422726C629007397D6 /* AlertExtension.swift */,
 				0443DC2F2726445A007397D6 /* Assets.xcassets */,
 				0443DC312726445A007397D6 /* LaunchScreen.storyboard */,
@@ -96,6 +104,7 @@
 			packageProductDependencies = (
 				0443DC3B272644A8007397D6 /* Alamofire */,
 				0443DC3E272644F7007397D6 /* SwiftyJSON */,
+				048E30E32727F10500F95A43 /* Kingfisher */,
 			);
 			productName = "SeSSAC-WEEK5-CLASS";
 			productReference = 0443DC2327264457007397D6 /* SeSSAC-WEEK5-CLASS.app */;
@@ -128,6 +137,7 @@
 			packageReferences = (
 				0443DC3A272644A8007397D6 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				0443DC3D272644F7007397D6 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				048E30E22727F10500F95A43 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 0443DC2427264457007397D6 /* Products */;
 			projectDirPath = "";
@@ -156,9 +166,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0443DC6F27278525007397D6 /* ViewController.swift in Sources */,
+				0443DC752727927A007397D6 /* PapagoViewController.swift in Sources */,
 				0443DC432726C629007397D6 /* AlertExtension.swift in Sources */,
 				0443DC41272687BE007397D6 /* OpenWeatherMapViewController.swift in Sources */,
-				0443DC2B27264457007397D6 /* ViewController.swift in Sources */,
+				0443DC73272786D1007397D6 /* NewViewController.swift in Sources */,
 				0443DC2727264457007397D6 /* AppDelegate.swift in Sources */,
 				0443DC2927264457007397D6 /* SceneDelegate.swift in Sources */,
 			);
@@ -398,6 +410,14 @@
 				version = 5.0.0;
 			};
 		};
+		048E30E22727F10500F95A43 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -410,6 +430,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0443DC3D272644F7007397D6 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
 			productName = SwiftyJSON;
+		};
+		048E30E32727F10500F95A43 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 048E30E22727F10500F95A43 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -9,15 +9,15 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 import CoreLocation
-import CoreLocationUI
+import Kingfisher
 
 
 class OpenWeatherMapViewController: UIViewController {
     
     static let identifier = "OpenWeatherMapViewController"
     var locationManager = CLLocationManager()
-    var latitude:Double?
-    var longitude:Double?
+    var latitude:Double = 0.0
+    var longitude:Double = 0.0
     
     
     @IBOutlet weak var dateLabel: UILabel!//현재날짜 
@@ -36,31 +36,58 @@ class OpenWeatherMapViewController: UIViewController {
         locationManager.delegate = self
         
         
+         getWeather()
+        
       //포그라운드 상태에서 위치 추적 권한 요청
       locationManager.requestWhenInUseAuthorization()
-             
+
     //배터리에 맞게 권장되는 최적의 정확도
      locationManager.desiredAccuracy = kCLLocationAccuracyBest
-             
+//
       //위치업데이트
        locationManager.startUpdatingLocation()
              
-    //위도 경도 가져오기
-      let coor = locationManager.location?.coordinate
-     latitude = coor?.latitude
-      longitude = coor?.longitude
-        
+
         
         let shareButton = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(clickedShareButton(_:)))
         
-        let reFreshButton = UIBarButtonItem(barButtonSystemItem: .refresh , target: self, action:   #selector(clickedRefreshButton(_:)))
+        let reFreshButton = UIBarButtonItem(barButtonSystemItem: .refresh , target: self, action: #selector(clickedRefreshButton(_:)))
         
         
         self.navigationItem.rightBarButtonItems = [reFreshButton,shareButton]
         
        
-      
+    }
+    
+    func getWeather(){
         
+        let url = "https://api.openweathermap.org/data/2.5/weather?lat=\(latitude)&lon=\(longitude)&appid=69f4c041bdfafce7925e677a1079844e"
+        //비공개
+        
+        AF.request(url, method: .get).validate().responseJSON { response in
+            switch response.result {
+            case .success(let value): //성공했을 때(let 연관값)
+                let json = JSON(value)
+                print("JSON: \(json)")
+                
+                let temp = json["main"]["temp"].doubleValue - 273.15
+                let humin = json["main"]["humidity"].doubleValue
+                let wind = json["wind"]["speed"].doubleValue
+                self.tempLabel.text! = String(format:"현재온도는 %.1f 도 입니다.",temp)
+                self.huminLabel.text! = String(format:"%.1f 만큼 습해요.",humin)
+                self.windLabel.text! = String(format:"%.1f m/s의 바람이 불어요.",wind)
+                              print("JSON: \(json)")
+                
+                
+                let icon = json["weather"][0]["icon"].stringValue
+                let url = URL(string: "http://openweathermap.org/img/wn/\(icon)@2x.png")
+                self.weatherImgView.kf.setImage(with: url)
+                print(url!)
+                
+            case .failure(let error): //실패했을 때
+                print(error)
+            }
+        }
     }
 
         @objc func clickedShareButton(_ sender:UIBarButtonItem){
@@ -89,12 +116,7 @@ class OpenWeatherMapViewController: UIViewController {
                         }
                      }
                     }
-            
-           
-            
-    
-
-                                            
+                     
 }
                                             
                                             
@@ -107,15 +129,21 @@ class OpenWeatherMapViewController: UIViewController {
             self.locationManager.requestWhenInUseAuthorization()
         }
         
+        
         func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
             print("didUpdateLocations")
             
           
             if let coordinate = locations.last?.coordinate {
             
+                self.latitude = coordinate.latitude
+                self.longitude = coordinate.longitude
+                
                 locationManager.startUpdatingLocation()
                 
                 showLocationLabel(coordi: coordinate)
+            } else {
+                print("error")
             }
             
         }

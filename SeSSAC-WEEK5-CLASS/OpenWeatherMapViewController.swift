@@ -56,8 +56,23 @@ class OpenWeatherMapViewController: UIViewController {
         
         self.navigationItem.rightBarButtonItems = [reFreshButton,shareButton]
         
-       
+        self.dateLabel.text = DateType2String()
     }
+    
+    func DateType2String() -> String{
+        let current = Date()
+        
+        let formatter = DateFormatter()
+        //한국 시간으로 표시
+        formatter.locale = Locale(identifier: "ko_kr")
+        formatter.timeZone = TimeZone(abbreviation: "KST")
+        //형태 변환
+        formatter.dateFormat = "MM월 dd일 HH시 mm분"
+        
+        return formatter.string(from: current)
+    }
+
+
     
     func getWeather(){
         

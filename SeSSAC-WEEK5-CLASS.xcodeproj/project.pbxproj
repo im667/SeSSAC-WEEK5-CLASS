@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04418985272930E300E30ADD /* PapagoAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04418984272930E300E30ADD /* PapagoAPIManager.swift */; };
 		0443DC2727264457007397D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443DC2627264457007397D6 /* AppDelegate.swift */; };
 		0443DC2927264457007397D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443DC2827264457007397D6 /* SceneDelegate.swift */; };
 		0443DC2E27264457007397D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0443DC2C27264457007397D6 /* Main.storyboard */; };
@@ -20,9 +21,13 @@
 		0443DC73272786D1007397D6 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443DC72272786D1007397D6 /* NewViewController.swift */; };
 		0443DC752727927A007397D6 /* PapagoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443DC742727927A007397D6 /* PapagoViewController.swift */; };
 		048E30E42727F10500F95A43 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 048E30E32727F10500F95A43 /* Kingfisher */; };
+		048E30E62728EA5300F95A43 /* KakaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E30E52728EA5300F95A43 /* KakaoViewController.swift */; };
+		048E30E82728EAB000F95A43 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E30E72728EAB000F95A43 /* Constants.swift */; };
+		048E30EA2728EC7100F95A43 /* VisionAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E30E92728EC7100F95A43 /* VisionAPIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04418984272930E300E30ADD /* PapagoAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PapagoAPIManager.swift; sourceTree = "<group>"; };
 		0443DC2327264457007397D6 /* SeSSAC-WEEK5-CLASS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SeSSAC-WEEK5-CLASS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0443DC2627264457007397D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0443DC2827264457007397D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +40,9 @@
 		0443DC6E27278525007397D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0443DC72272786D1007397D6 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		0443DC742727927A007397D6 /* PapagoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PapagoViewController.swift; sourceTree = "<group>"; };
+		048E30E52728EA5300F95A43 /* KakaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoViewController.swift; sourceTree = "<group>"; };
+		048E30E72728EAB000F95A43 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		048E30E92728EC7100F95A43 /* VisionAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionAPIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +82,11 @@
 				0443DC6E27278525007397D6 /* ViewController.swift */,
 				0443DC2827264457007397D6 /* SceneDelegate.swift */,
 				0443DC2C27264457007397D6 /* Main.storyboard */,
+				048E30E92728EC7100F95A43 /* VisionAPIManager.swift */,
+				048E30E72728EAB000F95A43 /* Constants.swift */,
+				048E30E52728EA5300F95A43 /* KakaoViewController.swift */,
 				0443DC742727927A007397D6 /* PapagoViewController.swift */,
+				04418984272930E300E30ADD /* PapagoAPIManager.swift */,
 				0443DC40272687BE007397D6 /* OpenWeatherMapViewController.swift */,
 				0443DC72272786D1007397D6 /* NewViewController.swift */,
 				0443DC422726C629007397D6 /* AlertExtension.swift */,
@@ -167,12 +179,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0443DC6F27278525007397D6 /* ViewController.swift in Sources */,
+				04418985272930E300E30ADD /* PapagoAPIManager.swift in Sources */,
 				0443DC752727927A007397D6 /* PapagoViewController.swift in Sources */,
+				048E30E62728EA5300F95A43 /* KakaoViewController.swift in Sources */,
 				0443DC432726C629007397D6 /* AlertExtension.swift in Sources */,
 				0443DC41272687BE007397D6 /* OpenWeatherMapViewController.swift in Sources */,
 				0443DC73272786D1007397D6 /* NewViewController.swift in Sources */,
+				048E30EA2728EC7100F95A43 /* VisionAPIManager.swift in Sources */,
 				0443DC2727264457007397D6 /* AppDelegate.swift in Sources */,
 				0443DC2927264457007397D6 /* SceneDelegate.swift in Sources */,
+				048E30E82728EAB000F95A43 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
